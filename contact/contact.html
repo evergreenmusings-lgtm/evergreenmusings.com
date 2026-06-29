@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About — Evergreen Musings</title>
+    <meta name="description" content="About Evelyn Greene and Evergreen Musings">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="icon" type="image/png" href="https://res.cloudinary.com/diefxvqpx/image/upload/v1780256982/Circular_icon_vicgco.png">
+</head>
+<body>
+
+    <header>
+        <a href="/"><img src="https://res.cloudinary.com/diefxvqpx/image/upload/v1780241389/White_transparent_text_logo_dt6cjt.png" class="logo" alt="Evergreen Musings logo"></a>
+        <button class="menu-btn" aria-label="Open menu">&#9776;</button>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/about">About</a>
+            <a href="/blog">Blog</a>
+            <a href="/stories">Stories</a>
+            <a href="/contact" class="active">Contact</a>
+        </nav>
+    </header>
+
+    <main class="about-page-wrapper">
+
+        <div class="about-heading">
+            <h1>About</h1>
+            <div class="about-rule"></div>
+        </div>
+
+        <!-- Replace the paragraphs below with your own story. Each <p> is a paragraph.
+             The first letter of the opening paragraph will automatically become a red drop-cap. -->
+        <div class="about-story">
+            <p>
+                I started writing because I didn't know what else to do with all the thoughts
+                that didn't belong anywhere else. They were too quiet for conversation,
+                too personal for small talk — so I gave them a page.
+            </p>
+
+            <div class="about-divider"></div>
+
+            <p>
+                Evergreen Musings is a space I built slowly, the way you'd arrange a room
+                you plan to live in for a long time. Nothing rushed. Nothing for show.
+                Just ideas I wanted to return to, and words that felt worth keeping.
+            </p>
+
+            <p>
+                I write about the films that stay with me, the journals I keep,
+                the small rituals that make ordinary days feel intentional.
+                Sometimes I write about writing itself — the mess of it,
+                the quiet satisfaction when something finally clicks.
+            </p>
+
+            <div class="about-divider"></div>
+
+            <p>
+                If you've found your way here, I hope something on these pages
+                feels like it was written with you in mind.
+                Because in some way, it was.
+            </p>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="footer-policies">
+            <a href="legal/privacy-policy">Privacy Policy</a>
+            <a href="legal/terms-of-use">Terms of Use</a>
+        </div>
+        <div class="footer-bottom">
+            <div class="social-icons">
+                <a href="https://www.instagram.com/evergreenmusings/" aria-label="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://www.pinterest.com/evergreenmusings/" aria-label="Instagram">
+                    <i class="fa-brands fa-pinterest"></i>
+                </a>
+            </div>
+            <span>&copy; Evergreen Musings — All Rights Reserved</span>
+        </div>
+    </footer>
+
+
+    <script>
+        const menuBtn = document.querySelector('.menu-btn');
+        const nav = document.querySelector('nav');
+        menuBtn.addEventListener('click', () => nav.classList.toggle('open'));
+    </script>
+
+</body>
+</html>

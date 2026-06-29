@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Evergreen Musings</title>
+    <!-- description-->
+    <meta name="description" content="A creative experience and blog by Evelyn Greene">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- keywords-->
+    <meta name="keywords" content="blog, essays, personal writing">
+    <!--icon-->
+    <link rel="icon" type="image/png" href="https://res.cloudinary.com/diefxvqpx/image/upload/v1780256982/Circular_icon_vicgco.png">
+    <!-- social media sharing-->
+    <meta property="og:title" content="Evergreen Musings">
+    <meta property="og:description" content="Quiet ideas, expressed simply.">
+    <meta property="og:image" content="https://res.cloudinary.com/diefxvqpx/image/upload/v1780256982/Circular_icon_vicgco.pn">
+    <meta property="og:url" content="https://evergreenmusings.com">
+</head>
+<body>
+
+    <header>
+        <a href="/"><img src="https://res.cloudinary.com/diefxvqpx/image/upload/v1780241389/White_transparent_text_logo_dt6cjt.png" class="logo" alt="Evergreen Musings logo"></a>
+        <button class="menu-btn" aria-label="Open menu">&#9776;</button>
+        <nav>
+            <a href="/" class="active">Home</a>
+            <a href="/about">About</a>
+            <a href="/blog">Blog</a>
+            <a href="/stories">Stories</a>
+            <a href="/contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="home">
+        <div class="home_content">
+            <img src="https://res.cloudinary.com/diefxvqpx/image/upload/v1780188419/homepage_e2so61.png"
+                 class="homepage_image" alt="Evergreen Musings hero image">
+            <div class="overlay-text">
+                <h1 class="title-main">Evergreen Musings</h1>
+                <h3 class="slogan">quiet ideas, expressed simply</h3>
+            </div>
+        </div>
+    </section>
+
+    <section class="recent-posts-section">
+        <h2>Recent Posts</h2>
+        <div class="posts-grid">
+            <div class="post">
+                <a href="posts/how-to-make-2026-your-year">
+                    <img src="https://res.cloudinary.com/diefxvqpx/image/upload/v1781717791/I_m_going_to_be_honest_2025_WASN_T_my_year._I_wanted_perfect_grades_in_university._I_wanted_to_be_fit_enough_to_run_a_5K_in_20_minutes._And_I_wanted_to_find_a_deeper_connection_with_the_voice_wit_lcvuxi.png"
+                 alt="how to make 2026 your year post">
+                    <div class="post-content">
+                        <h3>How to Make 2026 Your Year</h3>
+                        <div class="category-label">Personal Growth</div>
+                        <p>A guide to follow through with your new years resolutions</p>
+                    </div>
+                </a>
+            </div>
+            <!--
+            <div class="post">
+                <img src="placeholder.jpg" alt="">
+                <div class="post-content">
+                    <h3>Post Title Two With a Longer Name</h3>
+                    <p>Short description of the post goes here.</p>
+                </div>
+            </div>
+            <div class="post">
+                <img src="placeholder.jpg" alt="">
+                <div class="post-content">
+                    <h3>Post Title Three</h3>
+                    <p>Short description of the post goes here.</p>
+                </div>
+            </div>
+            <div class="post">
+                <img src="placeholder.jpg" alt="">
+                <div class="post-content">
+                    <h3>Post Title Four</h3>
+                    <p>Short description of the post goes here.</p>
+                </div>
+            </div>
+            <div class="post">
+                <img src="placeholder.jpg" alt="">
+                <div class="post-content">
+                    <h3>Post Title Five</h3>
+                    <p>Short description of the post goes here.</p>
+                </div>
+            </div>
+            -->
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-policies">
+            <a href="legal/privacy-policy">Privacy Policy</a>
+            <a href="legal/terms-of-use">Terms of Use</a>
+        </div>
+        <div class="footer-bottom">
+            <div class="social-icons">
+                <a href="https://www.instagram.com/evergreenmusings/" aria-label="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://www.pinterest.com/evergreenmusings/" aria-label="Instagram">
+                    <i class="fa-brands fa-pinterest"></i>
+                </a>
+            </div>
+            <span>&copy; Evergreen Musings — All Rights Reserved</span>
+        </div>
+    </footer>
+
+    <script>
+        const menuBtn = document.querySelector('.menu-btn');
+        const nav = document.querySelector('nav');
+        menuBtn.addEventListener('click', () => {
+            nav.classList.toggle('open');
+        });
+    </script>
+
+</body>
+</html>

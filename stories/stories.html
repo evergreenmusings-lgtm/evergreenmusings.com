@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" class="stories-page">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- Handwritten font for polaroid captions -->
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600&display=swap" rel="stylesheet">
+    <title>Stories | Evergreen Musings</title>
+</head>
+<body class="stories-page" style="background-color:#1a1a1a;">
+
+    <header>
+        <a href="/"><img src="https://res.cloudinary.com/diefxvqpx/image/upload/v1780241389/White_transparent_text_logo_dt6cjt.png" class="logo" alt="Evergreen Musings logo"></a>
+        <button class="menu-btn" aria-label="Open menu">&#9776;</button>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/about">About</a>
+            <a href="/blog">Blog</a>
+            <a href="/stories" class="active">Stories</a>
+            <a href="/contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Hero -->
+    <div class="stories-hero">
+        <h1>Stories</h1>
+        <p>my creative work</p>
+    </div>
+
+    <!-- Polaroid grid -->
+    <div class="stories-grid-wrapper">
+        <div class="stories-grid" id="stories-grid">
+
+            <!--
+                HOW TO ADD A NEW STORY:
+                1. Copy one <a class="polaroid"> block
+                2. Change href to your story's page (e.g. "story-title.html")
+                3. Replace the img src, caption, and date
+                4. Adjust the rotate value in style="" — small values like
+                   rotate(-3deg) or rotate(2deg) look most natural.
+                   Mix negatives and positives so they feel scattered.
+                5. Add class="taped" to some cards for the tape effect
+            -->
+
+            <a href="../story/TBD-a-short-story" class="polaroid taped" style="transform: rotate(-4deg);">
+                <img src="https://res.cloudinary.com/diefxvqpx/image/upload/v1782491008/TBD_art_bqsalb.png" alt="Story image">
+                <p class="polaroid-caption">TBD</p>
+                <p class="polaroid-date">January 2026</p>
+            </a>
+
+            <a href="#" class="polaroid" style="transform: rotate(2.5deg);">
+                <img src="https://res.cloudinary.com/diefxvqpx/image/upload/v1780188419/homepage_e2so61.png" alt="Story image">
+                <p class="polaroid-caption">Cherry</p>
+                <p class="polaroid-date">coming soon!</p>
+            </a>
+            <!--
+            <a href="post.html" class="polaroid taped" style="transform: rotate(-1.5deg);">
+                <img src="https://res.cloudinary.com/diefxvqpx/image/upload/v1780188419/homepage_e2so61.png" alt="Story image">
+                <p class="polaroid-caption">The Last Train Home</p>
+                <p class="polaroid-date">January 2026</p>
+            </a>
+
+            <a href="post.html" class="polaroid" style="transform: rotate(3.5deg);">
+                <img src="https://res.cloudinary.com/diefxvqpx/image/upload/v1780188419/homepage_e2so61.png" alt="Story image">
+                <p class="polaroid-caption">Grandmother's Kitchen</p>
+                <p class="polaroid-date">December 2025</p>
+            </a>
+
+            <a href="post.html" class="polaroid taped" style="transform: rotate(-3deg);">
+                <img src="https://res.cloudinary.com/diefxvqpx/image/upload/v1780188419/homepage_e2so61.png" alt="Story image">
+                <p class="polaroid-caption">Something Like Rain</p>
+                <p class="polaroid-date">November 2025</p>
+            </a>
+
+            <a href="post.html" class="polaroid" style="transform: rotate(1deg);">
+                <img src="https://res.cloudinary.com/diefxvqpx/image/upload/v1780188419/homepage_e2so61.png" alt="Story image">
+                <p class="polaroid-caption">The Garden at Dusk</p>
+                <p class="polaroid-date">October 2025</p>
+            </a>
+        -->
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-policies">
+            <a href="legal/privacy-policy">Privacy Policy</a>
+            <a href="legal/terms-of-use">Terms of Use</a>
+        </div>
+        <div class="footer-bottom">
+            <div class="social-icons">
+                <a href="https://www.instagram.com/evergreenmusings/" aria-label="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://www.pinterest.com/evergreenmusings/" aria-label="Instagram">
+                    <i class="fa-brands fa-pinterest"></i>
+                </a>
+            </div>
+            <span>&copy; Evergreen Musings — All Rights Reserved</span>
+        </div>
+    </footer>
+
+
+    <script>
+        const menuBtn = document.querySelector('.menu-btn');
+        const nav = document.querySelector('nav');
+        menuBtn.addEventListener('click', () => nav.classList.toggle('open'));
+    </script>
+
+</body>
+</html>

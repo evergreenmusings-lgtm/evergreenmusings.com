@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en" class="search-page">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <title>Blog | Evergreen Musings</title>
+</head>
+<body class="search-page">
+
+    <header>
+        <a href="/"><img src="https://res.cloudinary.com/diefxvqpx/image/upload/v1780241389/White_transparent_text_logo_dt6cjt.png" class="logo" alt="Evergreen Musings logo"></a>
+        <button class="menu-btn" aria-label="Open menu">&#9776;</button>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/about">About</a>
+            <a href="/blog" class="active">Blog</a>
+            <a href="/stories">Stories</a>
+            <a href="/contact">Contact</a>
+        </nav>
+    </header>
+
+    <main class="search-page-wrapper">
+
+        <h1>blog</h1>
+        <p class="search-subtitle">find something to read</p>
+
+        <div class="search-bar-wrap">
+            <input type="text" id="searchInput" placeholder="Search posts…" autocomplete="off">
+            <button class="search-submit" aria-label="Search"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+
+        <div class="filters-row">
+            <span class="filter-label">Filter by category</span>
+            <button class="clear-filters-btn" id="clearFilters">Clear all</button>
+        </div>
+        <div class="category-filters" id="categoryFilters">
+            <input type="checkbox" id="cat-movies" value="movies">
+            <label for="cat-movies">Movies</label>
+
+            <input type="checkbox" id="cat-personal-growth" value="personal-growth">
+            <label for="cat-personal-growth">Personal Growth</label>
+
+            <input type="checkbox" id="cat-journaling" value="journaling">
+            <label for="cat-journaling">Journaling</label>
+
+            <input type="checkbox" id="cat-writing-tips" value="writing-tips">
+            <label for="cat-writing-tips">Writing Tips</label>
+        </div>
+
+        <p class="results-count" id="resultsCount"></p>
+
+        <div class="results-grid" id="resultsGrid">
+            <div class="result-card" data-category="personal-growth" data-title="How to Make 2026 Your Year">
+                 <a href="../posts/how-to-make-2026-your-year">
+                <img src="https://res.cloudinary.com/diefxvqpx/image/upload/v1781717791/I_m_going_to_be_honest_2025_WASN_T_my_year._I_wanted_perfect_grades_in_university._I_wanted_to_be_fit_enough_to_run_a_5K_in_20_minutes._And_I_wanted_to_find_a_deeper_connection_with_the_voice_wit_lcvuxi.png" alt="post hero image">
+                <div class="result-card-body">
+                    <p class="result-card-category">Personal Growth</p>
+                    <h3>How to Make 2026 Your Year</h3>
+                    <p>A guide to follow through with your new years resolutions.</p>
+                </div>
+            </div>
+        <!--
+            <div class="result-card" data-category="journaling" data-title="Why I Journal Every Morning">
+                <img src="placeholder.jpg" alt="">
+                <div class="result-card-body">
+                    <p class="result-card-category">Journaling</p>
+                    <h3>Why I Journal Every Morning</h3>
+                    <p>Five minutes before coffee, and how it changed the way I think.</p>
+                </div>
+            </div>
+
+            <div class="result-card" data-category="movies" data-title="Films That Made Me Feel Less Alone">
+                <img src="placeholder.jpg" alt="">
+                <div class="result-card-body">
+                    <p class="result-card-category">Movies</p>
+                    <h3>Films That Made Me Feel Less Alone</h3>
+                    <p>A quiet list of cinema that speaks directly to the quiet parts of life.</p>
+                </div>
+            </div>
+
+            <div class="result-card" data-category="writing-tips" data-title="On Writing the First Draft Badly">
+                <img src="placeholder.jpg" alt="">
+                <div class="result-card-body">
+                    <p class="result-card-category">Writing Tips</p>
+                    <h3>On Writing the First Draft Badly</h3>
+                    <p>Permission to be imperfect, and why it's the only way to start.</p>
+                </div>
+            </div>
+
+            <div class="result-card" data-category="personal-growth" data-title="Letting Go of Productivity Guilt">
+                <img src="placeholder.jpg" alt="">
+                <div class="result-card-body">
+                    <p class="result-card-category">Personal Growth</p>
+                    <h3>Letting Go of Productivity Guilt</h3>
+                    <p>Rest is not something you earn. Here's a gentle reminder of that.</p>
+                </div>
+            </div>
+
+            <div class="result-card" data-category="movies" data-title="The Quiet Power of Slow Cinema">
+                <img src="placeholder.jpg" alt="">
+                <div class="result-card-body">
+                    <p class="result-card-category">Movies</p>
+                    <h3>The Quiet Power of Slow Cinema</h3>
+                    <p>Why some of the best films barely have a plot — and that's the point.</p>
+                </div>
+            </div>
+        -->
+
+        </div>
+
+        <p class="no-results" id="noResults">No posts found. Try a different search or category.</p>
+
+    </main>
+
+    <footer>
+        <div class="footer-policies">
+            <a href="legal/privacy-policy">Privacy Policy</a>
+            <a href="legal/terms-of-use">Terms of Use</a>
+        </div>
+        <div class="footer-bottom">
+            <div class="social-icons">
+                <a href="https://www.instagram.com/evergreenmusings/" aria-label="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://www.pinterest.com/evergreenmusings/" aria-label="Instagram">
+                    <i class="fa-brands fa-pinterest"></i>
+                </a>
+            </div>
+            <span>&copy; Evergreen Musings — All Rights Reserved</span>
+        </div>
+    </footer>
+
+
+    <script>
+        const menuBtn = document.querySelector('.menu-btn');
+        const nav = document.querySelector('nav');
+        menuBtn.addEventListener('click', () => nav.classList.toggle('open'));
+
+        const searchInput = document.getElementById('searchInput');
+        const categoryFilters = document.getElementById('categoryFilters');
+        const resultsGrid = document.getElementById('resultsGrid');
+        const noResults = document.getElementById('noResults');
+        const resultsCount = document.getElementById('resultsCount');
+        const clearBtn = document.getElementById('clearFilters');
+        const allCards = Array.from(resultsGrid.querySelectorAll('.result-card'));
+
+        function getActiveCategories() {
+            return Array.from(categoryFilters.querySelectorAll('input[type="checkbox"]:checked'))
+                .map(cb => cb.value);
+        }
+
+        function filterCards() {
+            const query = searchInput.value.trim().toLowerCase();
+            const activeCategories = getActiveCategories();
+
+            let visible = 0;
+            allCards.forEach(card => {
+                const title = card.dataset.title.toLowerCase();
+                const category = card.dataset.category;
+
+                const matchesSearch = query === '' || title.includes(query);
+                const matchesCategory = activeCategories.length === 0 || activeCategories.includes(category);
+
+                if (matchesSearch && matchesCategory) {
+                    card.style.display = '';
+                    visible++;
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+
+            resultsCount.textContent = visible === allCards.length
+                ? `Showing all ${visible} posts`
+                : `${visible} post${visible !== 1 ? 's' : ''} found`;
+
+            noResults.style.display = visible === 0 ? 'block' : 'none';
+        }
+
+        searchInput.addEventListener('input', filterCards);
+        categoryFilters.addEventListener('change', filterCards);
+
+        clearBtn.addEventListener('click', () => {
+            categoryFilters.querySelectorAll('input[type="checkbox"]').forEach(cb => cb.checked = false);
+            searchInput.value = '';
+            filterCards();
+        });
+
+        filterCards();
+    </script>
+
+</body>
+</html>
